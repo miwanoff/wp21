@@ -5977,3 +5977,9 @@ footer {
 .is-IE .post-thumbnail .wp-post-image {
 	min-width: auto;
 }
+
+/* ------------------ */
+.portfolio_planets {
+	margin-left:40px;
+	margin-right: 40px;
+}

@@ -25,7 +25,27 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'twentytwentyone' ); ?></a>
 
-	<?php get_template_part( 'template-parts/header/site-header' ); ?>
+	<?php get_template_part( 'template-parts/header/site-header' ); 
+	// Вывод меню на главной странице.
+if (is_front_page()) {
+    if (has_nav_menu('header-menu')): ?>
+    <nav class="header-navigation" aria-label="<?php esc_attr_e('Header Menu', 'twentytwentyone');?>">
+        <?php
+wp_nav_menu(
+        array(
+            'theme_location' => 'header-menu',
+            'menu_class' => 'header-menu',
+            'depth' => 1,
+            'fallback_cb' => '__return_empty_string',
+        )
+    );
+    ?>
+    </nav><!-- .footer-navigation -->
+    <?php endif;
+}
+	
+	?>
+	
 
 	<div id="content" class="site-content">
 		<div id="primary" class="content-area">
