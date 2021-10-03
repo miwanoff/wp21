@@ -6334,8 +6334,17 @@ footer {
   min-width: auto;
 }
 
-/* ------------------ */
+/* ---------My styles--------- */
 .portfolio_planets {
   margin-left: 40px;
   margin-right: 40px;
+}
+
+#menu-yakornoe {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+#menu-yakornoe li {
+  display: inline-block;
 }
