@@ -1,0 +1,11 @@
+h2 {
+  color: red;
+}
+
+.space_header {
+  background-image: url(../../../uploads/2021/10/mars2-1536x617.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #ffffff;
+  padding: 80px 0;
+}
