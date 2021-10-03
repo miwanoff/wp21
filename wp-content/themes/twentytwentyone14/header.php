@@ -29,6 +29,7 @@
 
         <?php
 
+get_template_part('template-parts/header/site-header');
 // Вывод меню на главной странице.
 if (is_front_page()) {
     if (has_nav_menu('header-menu')): ?>
@@ -46,8 +47,6 @@ wp_nav_menu(
         </nav><!-- .footer-navigation -->
         <?php endif;
 }
-
-get_template_part('template-parts/header/site-header');
 
 ?>
 
